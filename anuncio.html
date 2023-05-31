@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <title>anuncio</title>
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header_box">
+            <div class="logo">
+                <h2>inmobiliaria del rio</h2>
+                <p>Tu Proximo Hogar</p>
+            </div>
+            <div class="barra">
+                <img src="/build/img/barras.svg" alt="barra">
+            </div>    
+            <nav class="nav_principal">
+                <ul class="nav_box">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="btn-color">
+                    <img class="img-dark-btn" src="/build/img/dark-mode.svg" alt="modo noche">
+                    <img class="img-light-btn" src="/build/img/light_mode.svg" alt="modo dia">
+                </div>
+            </nav>
+            
+        </div>        
+    </header>
+    <main class="anuncio_propiedad contenedor">
+        <h1>Casa Moderna</h1>
+        <div class="anuncio centrar_width">
+            <div class="img_anuncio">
+                <picture>
+                    <source srcset="anuncio1.avif" type="imagen/avif">
+                    <source srcset="anuncio1.webp" type="imagen/webp">
+                    <img loading="lazy" src="/build/img/anuncio2.jpg" alt="anuncio9">
+                </picture>
+            </div>     
+            <div class="texto_anuncio">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus voluptatum reprehenderit vitae! Excepturi eius, magni commodi voluptates quisquam eveniet totam repellendus, nemo dolore minus voluptatum voluptatibus, aliquid officiis cumque distinctio.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tempore, illo modi suscipit error eaque cupiditate nobis praesentium aspernatur ipsum similique distinctio blanditiis minima iusto alias optio voluptatem, eum delectus.
+                </p>
+            </div> 
+        </div>
+        <div class="barra_separadora"></div>
+        <div class="detalles_casa centrar_width">
+            <h2>caracteristicas</h2>
+            <div class="detalles_box">
+                <div class="planos">
+                    <picture>
+                        <source srcset="plano.avif" type="imagen/avif">
+                        <source srcset="plano.webp" type="imagen/webp">
+                        <img loading="lazy" src="/build/img/plano1.jpeg" alt="planos casa">
+                    </picture>
+                </div>
+                <ul class="lista_detalles">
+                    <li>
+                        <img src="/build/img/icono_dormitorio.svg" alt="icono_dormitorio">
+                        <p>habitaciones: 5</p>
+                    </li>
+                    <li>
+                        <img src="/build/img/icono_wc.svg" alt="icono_wc">
+                        <p>baños: 3</p>
+                    </li>
+                    <li>
+                        <img src="/build/img/icono_estacionamiento.svg" alt="icono_estacionamiento">                       
+                        <p>estacionamientos: 4</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ubicacion_propiedad">
+            <h3>Nos encontramos</h3>
+            <div class="ubicacion_box">
+                <div class="detalles_ubicacion">
+                    <ul class="sitio_interes">
+                        <li><p>Estaciones de servicios</p></li>
+                        <li><p>Colegios</p></li>
+                        <li><p>Supermercados</p></li>
+                        <li><p>Laguna san pedro</p></li>
+                        <li><p>Bosques</p></li>
+                    </ul>
+                </div>
+                <div class="ubicacion" id="map">
+                    <iframe src="https://www.google.com/maps/embed? pb=!1m17!1m12!1m3!1d3191.6722732526305!2d-73.    13191291072076!3d-36.   87426260930727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.  1!3m2!1m1!2zMzbCsDUyJzI3LjQiUyA3M8KwMDcnMzcuNCJX!5e0!3m2  !1ses-419!2scl!4v1685444129812!5m2!1ses-419!2scl" width="600" height="450" style="border:0;"  allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer class="footer ">
+        <div class="footer_box contenedor">
+            <div class="redes_sociales">
+                <img src="/build/img/red1.png" alt="whatsap">
+                <img src="/build/img/red2.png" alt="instagram">
+                <img src="/build/img/red3.png" alt="facebook">
+                <img src="/build/img/red4.png" alt="twitter">
+            </div>
+            <nav class="nav_secundaria">
+                <ul class="nav_box">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy Todos los Derechos Reservados 2023</p>
+    </footer>
+    <script src="/build/js/bundle.min.js"></script>
+</body>
+</html> 

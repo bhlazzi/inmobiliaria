@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header_box">
+            <div class="logo">
+                <h2>inmobiliaria del rio</h2>
+                <p>Tu Proximo Hogar</p>
+            </div>
+            <div class="barra">
+                <img src="/build/img/barras.svg" alt="barra">
+            </div>    
+            <nav class="nav_principal">
+                <ul class="nav_box">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="btn-color">
+                    <img class="img-dark-btn" src="/build/img/dark-mode.svg" alt="modo noche">
+                    <img class="img-light-btn" src="/build/img/light_mode.svg" alt="modo dia">
+                </div>
+            </nav>
+            
+        </div>        
+    </header>
+    <main class="seccion_contacto contenedor">
+        <div class="canales_body">
+            <div class="canales_texto">
+                <h2>Conoce nuestros canales oficiales de contacto</h2>
+                <p>Y obtén la respuesta que estás buscando.</p>
+            </div>
+            <div class="canales">
+                <div class="canales_box">
+                    <div class="servicio">
+                        <div class="cn1 c1">
+                        <p>Servicio al Cliente
+                            <br>
+                            ¿tienes dudas sobre la compra o resolver tus dudas?
+                        </p>
+                        <a href="mailto:correo@correo.com"> Servicioalcliente@correo.com</a>
+                        </div>
+                        <div class="cn1 c2">
+                            <p>Servicio Postventa
+                                <br>
+                                ¿Problemas con tu vivienda?
+                            </p>
+                            <a href="mailto:correo@correo.com">serviciopostventa@correo.com</a>
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div class="cn1 c3">
+                            <p>Comunidades
+                                <br>
+                                ¿Eres Administrador o formas parte de un comite?
+                            </p>
+                            <a href="mailto:correo@correo.com">Comunidades@correo.com</a>
+                        </div>
+                        <div class="cn1 c4">
+                            <p>Devoluciones
+                                <br>
+                                Para solicitar devolucion por pagos de servicios basicos,contribuciones
+                            </p>
+                            <a href="mailto:correo@correo.com">devoluciones@correo.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_canales">
+                    <picture>
+                        <source srcset="servicio1.avif" type="imagen/avif">
+                        <source srcset="servicio1.webp" type="imagen/webp">
+                        <img loading="lazy" src="/build/img/servicio1.jpg" alt="servicio al cliente">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <h3>Complete el formulario de contacto</h3>
+        
+        <form action="" class="formulario centrar_width">
+            
+            <fieldset>
+                <legend>Informacion Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="apellido" name="apellido" id="apellido" placeholder="Apellido">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+
+                <label for="mensaje"> Mensaje</label>
+                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend> Informacion de la propiedad</legend>
+
+                <label for="propiedad">Propiedad :</label>
+                <select name="propiedad" id=propiedad">
+                    <option value=""  disabled selected> --Selecione -- </option>
+                    <option value="Casa1">Casa Oceanica</option>
+                    <option value="Casa2">Casa Moderna</option>
+                    <option value="Casa3">Casa Rural</option>
+                    <option value="Casa4">Casa America</option>
+                    <option value="Casa5">Casa Europea</option>
+                    <option value="Casa6">Casa Mar Plaza</option>
+                    <option value="Casa7">Casa Marmol</option>
+                    <option value="Casa8">Casa Cerro Arriba</option>
+                    <option value="Casa9">Casa Mansion Brighton</option>
+                </select>
+                <label for="opciones">Formas de pagos :</label>
+                <select name="opciones" id="opciones">
+                    <option value=""> --Selecione-- </option>
+                    <option value="efectivo"> Efectivo</option>
+                    <option value="credito"> Credito </option>
+                    <option value="cheques"> Cheque</option>
+                    <option value="Transferencia">Transferencia Bancaria</option>
+                    <option value="efectivo+credito">Efectivo + Credito</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de contacto</legend>
+                <p>Como desea ser contactado</p>
+                <div class="forma_contacto">
+                    <label for="telefono">Telefono :</label>
+                    <input type="radio" name="telefono" id="phone">
+
+                    <label for="email">Email :</label>
+                    <input type="radio" name="email" id="mail">
+                </div>
+                <p>Indique fecha y horario, si desea ser contacto por telefono</p>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+
+                    <label for="Hora">Hora</label>
+                    <input type="time" name="hora" id="hora" min="09:00" max="18:00">
+            </fieldset>
+        </form>
+        <input type="submit" value="Enviar" class="btn-enviar">
+    </main>
+    <footer class="footer ">
+        <div class="footer_box contenedor">
+            <div class="redes_sociales">
+                <img src="/build/img/red1.png" alt="whatsap">
+                <img src="/build/img/red2.png" alt="instagram">
+                <img src="/build/img/red3.png" alt="facebook">
+                <img src="/build/img/red4.png" alt="twitter">
+            </div>
+            <nav class="nav_secundaria">
+                <ul class="nav_box">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy Todos los Derechos Reservados 2023</p>
+    </footer>
+    <script src="/build/js/bundle.min.js"></script>
+</body>
+</html>
